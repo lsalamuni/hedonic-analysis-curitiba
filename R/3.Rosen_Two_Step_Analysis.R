@@ -31,11 +31,11 @@ if(sum(as.numeric(!pacotes %in% installed.packages())) != 0){
 
 ## 2.1. Accessing the Data
 
-low_tier <- read_excel("C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Datasets/Low_tier.xlsx")
+low_tier <- read_excel("Low_tier.xlsx")
 
-mid_tier <- read_excel("C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Datasets/Medium_tier.xlsx")
+mid_tier <- read_excel("Medium_tier.xlsx")
 
-high_tier <- read_excel("C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Datasets/High_tier.xlsx")
+high_tier <- read_excel("High_tier.xlsx")
 
 
 ## 2.2. Dividing into low, mid and high tiers

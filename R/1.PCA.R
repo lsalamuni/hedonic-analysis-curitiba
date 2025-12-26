@@ -30,7 +30,7 @@ if(sum(as.numeric(!pacotes %in% installed.packages())) != 0){
 
 ## 2.1. Verifying the dataset
 
-df_cwb <- read_excel("C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Datasets/CWB_PCA.xlsx",
+df_cwb <- read_excel("CWB_PCA.xlsx",
                      sheet = "Data")
 
 summary(df_cwb)
@@ -191,7 +191,7 @@ estratificacao <- data.frame("Loc" = df_cwb$Loc,
 print(estratificacao)
 
 write_xlsx(estratificacao,
-           path = "C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Datasets/Neighborhood_classification.xlsx")
+           path = "Neighborhood_classification.xlsx")
 
 # Stratification performed according to Favero (2005, p. 92).
 
@@ -201,7 +201,7 @@ write_xlsx(estratificacao,
 
 ## 4.1. Reading Curitiba's shapefile
 
-sf <- st_read("C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Shapefiles/Neighborhoods/DIVISA_DE_BAIRROS.shp")
+sf <- st_read("DIVISA_DE_BAIRROS.shp")
 
 st_crs(sf)
 

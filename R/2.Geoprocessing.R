@@ -33,97 +33,97 @@ if(sum(as.numeric(!pacotes %in% installed.packages())) != 0){
 ## 2.1. Loading shapefiles for use in the overall map
 
 #Neighborhoods - ok
-sf_loc <- st_read("C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Shapefiles/Neighborhoods/DIVISA_DE_BAIRROS.shp")
+sf_loc <- st_read("DIVISA_DE_BAIRROS.shp")
 st_crs(sf_loc)
 sf_loc <- st_transform(sf_loc, "+proj=longlat +datum=WGS84")
 
 #Parks - ok
-sf_parks <- st_read("C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Shapefiles/Nature/Parks/PARQUES_E_BOSQUES.shp")
+sf_parks <- st_read("PARQUES_E_BOSQUES.shp")
 st_crs(sf_parks)
 sf_parks <- st_transform(sf_parks, "+proj=longlat +datum=WGS84")
 
 #Gardens and squares - ok
-sf_squares <- st_read("C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Shapefiles/Nature/Squares/PRACAS_E_JARDINETES.shp")
+sf_squares <- st_read("PRACAS_E_JARDINETES.shp")
 st_crs(sf_squares)
 sf_squares <- st_transform(sf_squares, "+proj=longlat +datum=WGS84")
 
 #Cicloways - ok
-sf_cicloways <- st_read("C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Shapefiles/Infrastructure/Cicleways/CICLOVIA_OFICIAL.shp")
+sf_cicloways <- st_read("CICLOVIA_OFICIAL.shp")
 st_crs(sf_cicloways)
 sf_cicloways <- st_transform(sf_cicloways, "+proj=longlat +datum=WGS84")
 
 #Cicloroutes - ok
-sf_cicloroutes <- st_read("C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Shapefiles/Infrastructure/Cicleroutes/CICLORROTA.shp")
+sf_cicloroutes <- st_read("CICLORROTA.shp")
 st_crs(sf_cicloroutes)
 sf_cicloroutes <- st_transform(sf_cicloroutes, "+proj=longlat +datum=WGS84")
 
 #Railroads - ok
-sf_railroads <- st_read("C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Shapefiles/Infrastructure/Railroads/RRFSA_FERROVIAS.shp")
+sf_railroads <- st_read("RRFSA_FERROVIAS.shp")
 st_crs(sf_railroads)
 sf_railroads <- st_transform(sf_railroads, "+proj=longlat +datum=WGS84")
 
 #Sport & leisure areas - ok
-sf_sport <- st_read("C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Shapefiles/Infrastructure/Sport_leisure/CENTRO_DE_ESPORTE_E_LAZER.shp")
+sf_sport <- st_read("CENTRO_DE_ESPORTE_E_LAZER.shp")
 st_crs(sf_sport)
 sf_sport <- st_transform(sf_sport, "+proj=longlat +datum=WGS84")
 
 #Cemiteries - ok
-sf_cemiteries <- st_read("C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Shapefiles/Infrastructure/Cemiteries")
+sf_cemiteries <- st_read("CEMITERIOS.shp")
 st_crs(sf_cemiteries)
 sf_cemiteries <- st_transform(sf_cemiteries, "+proj=longlat +datum=WGS84")
 
 #Cidadania - ok
-sf_cidadania <- st_read("C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Shapefiles/Infrastructure/Cidadania/RUA_DA_CIDADANIA.shp")
+sf_cidadania <- st_read("RUA_DA_CIDADANIA.shp")
 st_crs(sf_cidadania)
 sf_cidadania <- st_transform(sf_cidadania, "+proj=longlat +datum=WGS84")
 
 #Terminals - ok
-sf_terminals <- st_read("C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Shapefiles/Infrastructure/Terminals/TERMINAL_DE_TRANSPORTE.shp")
+sf_terminals <- st_read("TERMINAL_DE_TRANSPORTE.shp")
 st_crs(sf_terminals)
 sf_terminals <- st_transform(sf_terminals, "+proj=longlat +datum=WGS84")
 
 #Dentist units - ok
-sf_dentists <- st_read("C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Shapefiles/Health/Dentist_units/CENTRO_DE_ESPECIALIDADES_ODONTOLOGICAS.shp")
+sf_dentists <- st_read("CENTRO_DE_ESPECIALIDADES_ODONTOLOGICAS.shp")
 st_crs(sf_dentists)
 sf_dentists <- st_transform(sf_dentists, "+proj=longlat +datum=WGS84")
 
 #Emergency - ok
-sf_emergency <- st_read("C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Shapefiles/Health/Emergency/UNIDADE_DE_PRONTO_ATENDIMENTO.shp")
+sf_emergency <- st_read("UNIDADE_DE_PRONTO_ATENDIMENTO.shp")
 st_crs(sf_emergency)
 sf_emergency <- st_transform(sf_emergency, "+proj=longlat +datum=WGS84")
 
 #Health units - ok
-sf_health_units <- st_read("C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Shapefiles/Health/Health_units/UNIDADE_DE_SAUDE.shp")
+sf_health_units <- st_read("UNIDADE_DE_SAUDE.shp")
 st_crs(sf_health_units)
 sf_health_units <- st_transform(sf_health_units, "+proj=longlat +datum=WGS84")
 
 #Hospitals - ok
-sf_hospitals <- st_read("C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Shapefiles/Health/Hospitals/HOSPITAL.shp")
+sf_hospitals <- st_read("HOSPITAL.shp")
 st_crs(sf_hospitals)
 sf_hospitals <- st_transform(sf_hospitals, "+proj=longlat +datum=WGS84")
 
 #Specialized medical units - ok
-sf_med_units <- st_read("C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Shapefiles/Health/Medical_units/CENTRO_DE_ESPECIALIDADES_MEDICAS.shp")
+sf_med_units <- st_read("CENTRO_DE_ESPECIALIDADES_MEDICAS.shp")
 st_crs(sf_med_units)
 sf_med_units <- st_transform(sf_med_units, "+proj=longlat +datum=WGS84")
 
 #Irregular settlements - ok
-sf_irregular <- st_read("C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Shapefiles/Irregular/OCUPACAO_IRREGULAR.shp")
+sf_irregular <- st_read("OCUPACAO_IRREGULAR.shp")
 st_crs(sf_irregular)
 sf_irregular <- st_transform(sf_irregular, "+proj=longlat +datum=WGS84")
 
 #Lakes - ok
-sf_lakes <- st_read("C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Shapefiles/Nature/Lakes/HIDRO_LAGOS_LAGOAS_REPRESAS.shp")
+sf_lakes <- st_read("HIDRO_LAGOS_LAGOAS_REPRESAS.shp")
 st_crs(sf_lakes)
 sf_lakes <- st_transform(sf_lakes, "+proj=longlat +datum=WGS84")
 
 #Rivers - ok
-sf_rivers <- st_read("C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Shapefiles/Nature/Rivers/HIDRO_RIOS_LN.shp")
+sf_rivers <- st_read("HIDRO_RIOS_LN.shp")
 st_crs(sf_rivers)
 sf_rivers <- st_transform(sf_rivers, "+proj=longlat +datum=WGS84")
 
 #Public schools - ok
-sf_schools <- st_read("C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Shapefiles/Schools/ESCOLA_MUNICIPAL.shp")
+sf_schools <- st_read("ESCOLA_MUNICIPAL.shp")
 st_crs(sf_schools)
 sf_schools <- st_transform(sf_schools, "+proj=longlat +datum=WGS84")
 
@@ -133,10 +133,10 @@ sf_schools <- st_transform(sf_schools, "+proj=longlat +datum=WGS84")
 
 ## 3.1. Data wrangling
 
-types <- read_excel(path = "C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Datasets/Neighborhood_classification.xlsx",
+types <- read_excel(path = "Neighborhood_classification.xlsx",
                     sheet = "Sheet1")
 
-df_cwb <- read_excel(path = "C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Datasets/CWB_PCA.xlsx",
+df_cwb <- read_excel(path = "CWB_PCA.xlsx",
                      sheet = "Data")
 
 types$Loc <- toupper(types$Loc)
@@ -363,7 +363,7 @@ icon_schools <- awesomeIcons(
 ## 3.5. OpenStreetMap geocoding
 ## NOTE: This section is set to NOT RUN by default (time-consuming geocoding process)
 
-# df_housing <- read_excel("C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Datasets/CWB_Housing_Wrangled.xlsx")
+# df_housing <- read_excel("CWB_Housing_Wrangled.xlsx")
 #
 # df_housing <- df_housing %>%
 #   filter(Outlier == 0) %>%
@@ -387,7 +387,7 @@ icon_schools <- awesomeIcons(
 #   df_housing$latitude[batch_indices] <- batch_df$lat
 #   df_housing$longitude[batch_indices] <- batch_df$lon
 #
-#   write_xlsx(df_housing, "C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Datasets/CWB_Housing_Geocoded.xlsx")
+#   write_xlsx(df_housing, "CWB_Housing_Geocoded.xlsx")
 #
 #   geocoded_so_far <- sum(!is.na(df_housing$latitude[1:end_idx]))
 #   cat(sprintf("  Progress saved. %d/%d geocoded successfully.\n", geocoded_so_far, end_idx))
@@ -399,13 +399,13 @@ icon_schools <- awesomeIcons(
 #             sum(!is.na(df_housing$latitude)), n_rows))
 # cat(sprintf("Failed: %d addresses\n", sum(is.na(df_housing$latitude))))
 #
-# write_xlsx(df_housing, "C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Datasets/CWB_Housing_Geocoded.xlsx")
+# write_xlsx(df_housing, "CWB_Housing_Geocoded.xlsx")
 
 
 ## 3.6. Retry failed geocoding
 ## NOTE: This section is set to NOT RUN by default (time-consuming geocoding process)
 
-# df_housing <- read_excel("C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Datasets/CWB_Housing_Geocoded.xlsx")
+# df_housing <- read_excel("CWB_Housing_Geocoded.xlsx")
 #
 # failed_indices <- which(is.na(df_housing$latitude))
 # cat(sprintf("Found %d addresses that need re-geocoding\n", length(failed_indices)))
@@ -431,7 +431,7 @@ icon_schools <- awesomeIcons(
 #     Sys.sleep(3)
 #   }
 #
-#   write_xlsx(df_housing, "C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Datasets/CWB_Housing_Geocoded.xlsx")
+#   write_xlsx(df_housing, "CWB_Housing_Geocoded.xlsx")
 # }
 #
 # still_failed <- sum(is.na(df_housing$latitude))
@@ -440,7 +440,7 @@ icon_schools <- awesomeIcons(
 
 ## 3.7. Retrieve df_housing with geoencoding data
 
-df_housing <- read_excel("C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Datasets/CWB_Housing_Geocoded.xlsx")
+df_housing <- read_excel("CWB_Housing_Geocoded.xlsx")
 
 
 ## 3.8. Map providers
@@ -854,11 +854,11 @@ mapa
 
 ## 4.1. Retrieving base data
 
-private_schools <- read_excel("C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Datasets/Private_schools.xlsx")
+private_schools <- read_excel("Private_schools.xlsx")
 
-shoppings <- read_excel("C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Datasets/Shopping_centers.xlsx")
+shoppings <- read_excel("Shopping_centers.xlsx")
 
-green_area <- read_excel("C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Datasets/Green_area.xlsx")
+green_area <- read_excel("Green_area.xlsx")
 
 
 ## 4.2. info_loc
@@ -975,12 +975,12 @@ info_loc <- info_loc %>%
             AREA, N_PARKS, N_CULTURE_FACILITIES, N_SHOPPINGS))
 
 write_xlsx(info_loc,
-           path = "C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Datasets/Info_Neighborhoods.xlsx")
+           path = "Info_Neighborhoods.xlsx")
 
 
 ## 4.3. Merging the information with the main dataset
 
-housing_df <- read_excel("C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Datasets/CWB_Housing_Geocoded.xlsx")
+housing_df <- read_excel("CWB_Housing_Geocoded.xlsx")
 
 housing_df <- housing_df %>%
   mutate(NEIGHBORHOOD = toupper(Neighborhood)) %>%
@@ -992,7 +992,7 @@ housing_df <- housing_df %>%
 housing_df <- left_join(housing_df, info_loc,
                         by = "NEIGHBORHOOD")
 
-types <- read_excel("C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Datasets/Neighborhood_classification.xlsx")
+types <- read_excel("Neighborhood_classification.xlsx")
 
 types <- types %>%
   rename(NEIGHBORHOOD = Loc) %>%
@@ -1021,7 +1021,7 @@ high_tier <- housing_df %>%
   relocate(longitude, .after = "latitude")
 
 write_xlsx(high_tier,
-           path = "C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Datasets/High_tier.xlsx")
+           path = "High_tier.xlsx")
 
 ###
 
@@ -1033,7 +1033,7 @@ medium_tier <- housing_df %>%
   relocate(longitude, .after = "latitude")
 
 write_xlsx(medium_tier,
-           path = "C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Datasets/Medium_tier.xlsx")
+           path = "Medium_tier.xlsx")
 
 ###
 
@@ -1045,4 +1045,4 @@ low_tier <- housing_df %>%
   relocate(longitude, .after = "latitude")
 
 write_xlsx(low_tier,
-           path = "C:/Users/Lucas/OneDrive/Lucas Salamuni/Universidades/Universitat zu Koln/Semester 3/RG Econometrics/Proposal/Datasets/Low_tier.xlsx")
+           path = "Low_tier.xlsx")
