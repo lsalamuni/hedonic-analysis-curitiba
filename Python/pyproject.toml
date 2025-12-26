@@ -1,0 +1,49 @@
+[project]
+name = "imovelweb-scraper"
+version = "1.0.0"
+description = "Web scraper for ImovelWeb real estate listings in Curitiba"
+authors = [
+    { name = "Lucas Salamuni", email = "lsalamun@smail.uni-koeln.de" }
+]
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+dependencies = [
+    "selenium>=4.15.0",
+    "undetected-chromedriver>=3.5.0",
+    "pandas>=2.0.0",
+    "openpyxl>=3.1.0",
+    "setuptools>=61.0",  # Required for Python 3.12+ (provides distutils)
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+]
+
+[project.scripts]
+scrape = "imovelweb_scraper_interactive:main"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["imovelweb_scraper_interactive", "imovelweb_scraper_v2"]
+
+[tool.pixi.workspace]
+channels = ["conda-forge"]
+platforms = ["win-64"]
+
+[tool.pixi.pypi-dependencies]
+imovelweb-scraper = { path = ".", editable = true }
+
+[tool.pixi.environments]
+default = { solve-group = "default" }
+dev = { features = ["dev"], solve-group = "default" }
+
+[tool.pixi.tasks]
+
+[tool.pixi.dependencies]
+beautifulsoup4 = ">=4.14.3,<5"
+requests = ">=2.32.5,<3"

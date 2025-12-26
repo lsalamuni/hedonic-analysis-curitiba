@@ -1,0 +1,25 @@
+# Excluded folders
+Motivation/
+Images/
+.claude/
+Shapefiles/
+proposal_corrected.txt
+
+# R Markdown files
+R/Markdown/Code/
+
+# Python
+__pycache__/
+.pixi/
+*.egg-info/
+pixi.lock
+*.json
+save_excel.py
+
+# Generated datasets
+Datasets/Neighborhood_classification.xlsx
+Datasets/CWB_Housing_Geocoded.xlsx
+Datasets/Info_Neighborhoods.xlsx
+Datasets/High_tier.xlsx
+Datasets/Medium_tier.xlsx
+Datasets/Low_tier.xlsx
