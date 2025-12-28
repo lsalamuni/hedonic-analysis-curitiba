@@ -10,11 +10,11 @@
 
 ## 1.1. Retrieving Packages
 
-pacotes <- c("tidyverse", "factoextra", "readxl", "ggplot2", "patchwork",
+pacotes <- c("wdman", "factoextra", "readxl", "ggplot2", "patchwork",
              "corrplot", "plotly", "data.table", "EFAtools", "psych",
              "leaflet", "sf", "sp", "mapview", "webshot", "htmltools",
              "leafem", "viridisLite", "writexl", "rvest", "readr", "tidygeocoder",
-             "stringr", "curl", "magrittr", "RSelenium", "netstat", "wdman")
+             "stringr", "curl", "magrittr", "RSelenium", "netstat", "tidyverse")
 
 if(sum(as.numeric(!pacotes %in% installed.packages())) != 0){
   instalador <- pacotes[!pacotes %in% installed.packages()]
